@@ -1,0 +1,9 @@
+escribir("Ingresa el valor de A:")
+a = leer()
+
+escribir("Ingresa el valor de B:")
+b = leer()
+
+resultado = a + b
+
+escribir("La suma es: " .. resultado)
