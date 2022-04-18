@@ -1,0 +1,9 @@
+escribir("Ingresa un número:")
+
+numero = leer()
+
+si numero % 2 == 0
+	escribir(numero .. " es par")
+sino
+	escribir(numero .. " no es par")
+fin

@@ -1,0 +1,21 @@
+/* 
+	Variable que indicará la cantidad de números que va 
+	mostrando, para que el algoritmo termine cuando haya mostrado
+  los 10 primeros números pares.
+*/
+numeros_mostrados = 0 
+
+/* 
+	Número que irá siendo evaluado para mostrarlo en caso de que 
+  sea par.
+*/
+numero = 1
+
+mientras numeros_mostrados < 10 
+    si (numero % 2 == 0)
+        numeros_mostrados = numeros_mostrados + 1
+        escribir(numero)
+    fin
+
+    numero = numero  + 1
+fin
