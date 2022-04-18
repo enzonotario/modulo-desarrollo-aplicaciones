@@ -1,0 +1,21 @@
+escribir("Ingresa una contraseña")
+
+contrasena = leer()
+
+caracter = ''
+
+contrasena_es_segura = falso
+
+desde (i = 0; i < cadena.longitud(contrasena); i++)
+    caracter = cadena.subcadena(contrasena, i, 1)
+
+    si (cadena.es_numero(caracter) == verdadero)
+        contrasena_es_segura = verdadero
+    fin
+fin
+
+si (contrasena_es_segura == verdadero)
+    escribir("La contraseña es segura")
+sino
+    escribir("La contraseña no es segura")
+fin
