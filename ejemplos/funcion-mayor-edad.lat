@@ -1,0 +1,17 @@
+funcion es_mayor_de_edad(edad)
+	si edad >= 18
+		retornar verdadero
+	sino
+		retornar falso
+	fin
+fin
+
+escribir("Ingresa tu edad:")
+
+edad = leer()
+
+si (es_mayor_de_edad(edad))
+    escribir("Eres mayor de edad")
+sino 
+    escribir("No eres mayor de edad")
+fin
