@@ -1,3 +1,5 @@
+escribir("10 primeros números pares:")
+
 /* 
 	Variable que indicará la cantidad de números que va 
 	mostrando, para que el algoritmo termine cuando haya mostrado
@@ -12,10 +14,24 @@ numeros_mostrados = 0
 numero = 1
 
 mientras numeros_mostrados < 10 
+    /*
+        Mientras numeros_mostrados sea menor que 10, se ejecutará
+        este bloque de código.
+    */
+
     si (numero % 2 == 0)
+        /*
+            Si el resto de la división entera de la variable NUMERO
+            por 2, es igual a 0, entonces es un número PAR.
+        */
+
+        // Aumentamos el contador de números mostrados.
         numeros_mostrados = numeros_mostrados + 1
+
+        // Mostramos el pantalla el número.
         escribir(numero)
     fin
 
+    // Aumentamos el número a evaluar.
     numero = numero  + 1
 fin
