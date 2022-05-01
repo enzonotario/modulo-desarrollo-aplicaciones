@@ -1,14 +1,43 @@
 escribir("Ingresa un número")
 
+// Variable que contendrá el número ingresado por el usuario.
 numero = leer()
+
+// Variable que utilizaremos para contar los divisores del número.
 j = 0
 
 desde (i = 1; i <= numero; i++)
+    /*
+        Este bloque de código se ejecutará en N ciclos, desde 1 
+        hasta el valor de la variable NUMERO.
+        
+        En cada ciclo, debemos evaluar si el NUMERO es divisible por
+        la variable I, que contiene el número de ciclo que se está 
+        ejecutando.
+        
+        Si NUMERO es divisible por I, aumentaremos el valor de J,
+        indicando que hemos encontrado un divisor de NUMERO.
+
+        Finalmente, NUMERO es primo si J es igual a 2. Sino, quiere decir
+        que contiene más de dos divisores, y por lo tanto no es primo.
+    */
+
     si (numero % i  == 0)
+        /*
+            Si se cumple esta condición, quiere decir que NUMERO
+            es divisible por I.
+            Por lo tanto, hemos encontrado un divisor de NUMERO, y
+            aumentamos nuestro contador de divisores (J).
+        */
         j = j + 1
     fin
 
     si (j > 2)
+        /*
+            Si J es mayor a 2, quiere decir que NUMERO tiene más de
+            dos divisores, por lo tanto ya no es un número primo, y
+            rompemos el bucle para terminar la ejecución del mismo.
+        */
         romper
     fin
 fin
