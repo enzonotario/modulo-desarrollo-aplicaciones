@@ -1,5 +1,13 @@
+/*
+    Programa: Saludo.
+    Este simple programa le pregunta su nombre al usuario, y lo saluda.
+*/
+
+// Le preguntamos el nombre al usuario.
 escribir("Hola, ¿cómo te llamas?")
 
+// Asignamos en la variable NOMBRE, el valor que el usuario ingrese por medio del teclado..
 nombre = leer()
 
-escribir("¡Buen día " .. nombre .. "!")
+// Conformamos un saludo personalizado con su nombre.
+escribir("¡Buen día " .. nombre .. ", que tengas una excelente jornada!")
