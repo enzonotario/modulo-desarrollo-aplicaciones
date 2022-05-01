@@ -11,22 +11,24 @@ caracter = ''
 contrasena_es_segura = falso
 
 desde (i = 0; i < cadena.longitud(contrasena); i++)
-    /*
-        Este bloque de código se ejeutará tantas veces como
-        caracteres tenga la contraseña.
-
-        De esta manera, con la variable I podremos ir 
-        posicionándonos en cada caracter de la contraseña, y evaluar
-        si es un número o no.
-    */
+    escribir("[ --- CICLO --- ]")
+    escribir("i = " .. i)
 
     // Obtenemos el CARACTER número I de la CONTRASENA.
     caracter = cadena.subcadena(contrasena, i, 1)
+    escribir("caracter = " .. caracter)
 
-    si (cadena.es_numero(caracter) == verdadero)
+    // Determinamos si CARACTER es un número.
+    es_numero = cadena.es_numero(caracter)
+    escribir("¿es número? = " .. es_numero)
+
+    si (es_numero == verdadero)
         // Si CARACTER es un número, actualizamos nuestra variable auxiliar.
         contrasena_es_segura = verdadero
     fin
+
+    escribir("[ --- FIN CICLO ---]")
+    escribir("")
 fin
 
 si (contrasena_es_segura == verdadero)
