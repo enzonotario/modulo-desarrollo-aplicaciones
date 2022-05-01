@@ -1,0 +1,17 @@
+escribir("Programa para calcular el cuadrado de un número")
+
+escribir("Ingresa un número")
+
+x = leer()
+
+/*
+    A continuación calculamos el cuadrado de la variable X,
+    utilizando la función mate.pot().
+    El primer argumento de la función mate.pot() será la variable
+    que contenga el valor introducido por el usuario; El segundo
+    argumento será el número 2, ya que estamos calculando el
+    cuadrado de un número.
+*/
+cuadrado = mate.pot(x, 2)
+
+escribir("El cuadrado de " .. x .. " es " .. cuadrado)

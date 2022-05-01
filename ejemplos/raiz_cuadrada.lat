@@ -1,9 +1,0 @@
-escribir("Programa para calcular la raíz cuadrada de un número.")
-
-escribir("Ingresa un número")
-
-x = leer()
-
-raiz_cuadrada = mate.pot(x, 2)
-
-escribir("La raíz cuadrada de " .. x .. " es " .. raiz_cuadrada)
