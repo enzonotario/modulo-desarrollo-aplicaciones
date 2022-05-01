@@ -6,4 +6,4 @@ b = leer()
 
 resultado = a + b
 
-escribir("La suma es: " .. resultado)
+escribir("La suma de A+B es: " .. resultado)
