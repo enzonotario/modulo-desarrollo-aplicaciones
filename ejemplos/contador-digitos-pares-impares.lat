@@ -1,0 +1,33 @@
+/*
+    Programa que recibe un número natural, y cuenta cuántos 
+    dígitos pares y cuántos impares tiene.
+*/
+
+funcion esPar(numero)
+    retornar numero % 2 == 0
+fin
+
+funcion iniciar()
+    escribir("Ingresa un número")
+    x = leer()
+
+    contadorPares = 0
+    contadorImpares = 0
+
+    mientras (x > 0)
+        digito = x % 10
+
+        si (esPar(digito))
+            contadorPares = contadorPares + 1
+        sino
+            contadorImpares = contadorImpares + 1
+        fin
+
+        x = mate.trunc(x / 10)
+    fin
+
+    escribir("Dígitos pares: " .. contadorPares)
+    escribir("Dígitos impares: " .. contadorImpares)
+fin
+
+iniciar()
