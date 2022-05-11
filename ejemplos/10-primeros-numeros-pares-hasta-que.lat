@@ -1,0 +1,15 @@
+/*
+    Programa que muestra los 10 primeros números pares.
+*/
+
+i = 0
+numerosMostrados = 0
+
+repetir
+    si (i != 0 && i % 2 == 0)
+        numerosMostrados++
+        escribir(numerosMostrados .. "° número par: " .. i)
+    fin
+
+    i++
+hasta (numerosMostrados == 10)
